@@ -238,6 +238,7 @@ main{
 				list-style-type: none;
 				display: flex;
 				justify-content: center;
+				flex-wrap: wrap;
 				li{
 					margin: auto 15px;
 				}
@@ -401,6 +402,31 @@ main{
 			textarea{
 				max-height: 300px;
 				min-height: 200px;
+			}
+		}
+	}
+}
+footer{
+	text-align: center;
+	padding: 0 0 100px;
+	ul{
+		display: flex;
+		justify-content: center;
+		li{
+			margin: 0 5px;
+			width: 25px;
+			height: 25px;
+			a{
+				svg{
+					transition: .3s;
+				}
+			}
+			a{
+				&:hover{
+					svg{
+						fill: #222;
+					}
+				}
 			}
 		}
 	}

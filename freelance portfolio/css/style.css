@@ -7328,7 +7328,8 @@ main section {
     padding: 0;
     list-style-type: none;
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    flex-wrap: wrap; }
     main section#portfolio .tag li {
       margin: auto 15px; }
   main section#portfolio .grid {
@@ -7448,3 +7449,18 @@ main section {
   main section#sendform textarea {
     max-height: 300px;
     min-height: 200px; }
+
+footer {
+  text-align: center;
+  padding: 0 0 100px; }
+  footer ul {
+    display: flex;
+    justify-content: center; }
+    footer ul li {
+      margin: 0 5px;
+      width: 25px;
+      height: 25px; }
+      footer ul li a svg {
+        transition: .3s; }
+      footer ul li a:hover svg {
+        fill: #222; }
