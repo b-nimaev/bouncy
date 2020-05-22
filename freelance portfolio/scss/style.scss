@@ -1,0 +1,347 @@
+@import 'scss/bootstrap.scss';
+$text-color: #81868e;
+html{
+	margin: 0;
+	padding: 0;
+}
+body{
+	padding: 0;
+	margin: 0;
+	background: #eee;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.navbar{
+	color: #fff;
+	position: absolute;
+	width: 100%;
+	
+	h3{
+		font-weight: 900;
+	}
+
+	li.nav-item{
+		margin: 0 15px;
+		transition: .3s;
+		&.active{
+			border: 1px solid #fff;
+			border-radius: 30px;
+			padding: 5px 10px;
+			cursor: pointer;
+			a{
+				display: block;
+				transition: .3s;
+				transform: scale(1);
+				image-rendering: optimizeQuality;
+				&:hover{
+					color: #fff;
+					transform: scale(1.01);
+				}
+			}
+		}
+		a{
+			display: block;
+			position: relative;
+			top: 0;
+			left: 0;
+			transition: .3s;
+			transform: scale(1);
+			text-shadow: 0 0 0 3px  #000;
+			&:hover{
+				top: -5px;
+				left: 5px;
+				color: #fff;
+				text-shadow: -15px 15px 0 #999;
+			}
+		}
+	}
+	li.nav-item{
+		margin: auto 15px;
+	}
+}
+
+header{
+	width: 100%;
+	padding: 100px 0;
+	background-image: url('../img/header__bg.jpg');
+	background-size: cover;
+	background-position: center center;
+	min-height: 650px;
+	color: #fff;
+	text-align: center;
+	h1{
+		text-transform: uppercase;
+	}
+	.header__heading{
+		margin: 200px 0;
+	}
+}
+
+main{
+	section{
+		padding: 80px 0;
+		&#about{
+			img{
+				text-align: center;
+				display: block;
+				margin: auto;
+			}
+		}
+		.heading__section{
+			font-family: 'Source sans pro', sans-serif;
+			font-weight: 100;
+			text-shadow: 0 0 3px #3ef;
+			letter-spacing: 8px;
+			text-align: center;
+			text-transform: uppercase;
+			font-size: 20px;
+			margin-bottom: 50px;
+		}
+		p{
+			color: $text-color;
+		}
+		&#details{
+			p{
+				margin: 0;
+			}
+			.deatils__menu{
+				margin: 80px 0;
+				padding: 0;
+				display: flex;
+				justify-content: center;
+				li{
+					margin: 0 30px;
+					display: block;
+					height: 50px;
+					widows: 50px;
+					cursor: pointer;
+					svg{
+						transition: .2s;
+						height: 50px;
+						width: 50px;
+						transform: scale(1);
+					}
+					&:hover{
+						svg{
+							fill: #64b0b763;
+							transform: scale(1.1);
+						}
+						&:active{
+							svg{
+								transition: 0.1s;
+								fill: #64b0b7;
+								transform: scale(1);
+							}
+						}
+					}
+					img{
+						display: block;
+						height: 50px;
+						width: 50px;
+						margin: auto;
+					}
+				}
+			}
+		}
+		&#projects{
+			.projects{
+				margin: 0 -15px;
+				display: flex;
+				.project{
+					flex: 1;
+					padding: 0 15px;
+					background: #000;
+					min-height: 250px;
+					display: inherit;
+					cursor: pointer;
+					transition: .2s;
+					&:hover{
+						background: #ccc;
+					}
+					.project__heading{
+						display: block;
+						margin: auto;
+						color: $white;
+						text-align: center;
+					}
+				}
+			}
+		}
+
+		&#services{
+			.services__menu{
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				.services__item{
+					margin: 15px 0;
+					display: flex;
+					span{
+						margin: auto 0;
+					}
+				}
+			}
+			.services__item span.ico{
+				font-family: 'PE-icon-7-stroke', sans-serif;
+				font-size: 50px;
+				margin: auto 15px auto 0;
+				display: block;
+				background: #000;
+				color: #fff;
+				padding: 0 15px;
+				border-radius: 50%;
+			}
+		}
+		&#teammates{
+			background-image: url('../img/rectanlge-background.png');
+			background-size: cover;
+			background-position: center center;
+			img{
+				display: block;
+				position: absolute;
+				top: -300px;
+			}
+			h4{
+				font-family: 'Montserrat', sans-serif;
+				font-weight: 300;
+				text-transform: uppercase;
+				font-weight: 100;
+				&.teammate{
+					text-transform: capitalize;
+					display: flex;
+					&:before{
+						content: '';
+						display: block;
+						height: 1px;
+						width: 15px;
+						margin: auto 15px auto 0;
+						background: #bbb;
+					}
+				}
+				&.position{
+					text-transform: lowercase;
+					letter-spacing: 1.5px;
+				}
+				.text-primary{
+					color: #000 !important;
+					text-shadow: 0 0 3px #3ef;
+				}
+			}
+		}
+		&#portfolio{
+			.tag{
+				margin: 0;
+				padding: 0;
+				list-style-type: none;
+				display: flex;
+				justify-content: center;
+				li{
+					margin: auto 15px;
+				}
+			}
+			.grid{
+				margin: 50px auto;
+				img{
+					cursor: pointer;
+					width: 100%;
+					height: auto;
+					opacity: 1;
+					transition: .3s;
+					&:hover{
+						opacity: .9;
+					}
+				}
+			}
+			.start{
+				background: #fff;
+				border-radius: 100px;
+				padding: 30px;
+				p{
+					text-align: center;
+				}
+				button{
+					display: block;
+					margin: 0 auto;
+				}
+			}
+		}
+		&#contact{
+			text-align: center;
+			box-shadow: 0 0 15px #000;
+			background-image: url('../img/Black-&-White-4.jpg');
+			background-size: cover;
+			color: #fff;
+			background-position: center center;
+			button{
+				color: #fff;
+				border-color: #fff;
+				margin: 30px auto;
+			}
+		}
+		&#testimonials{
+			.card{
+				flex-direction: row;
+				padding: 50px 0;
+				cursor: pointer;
+				box-shadow: 0 0 15px #ddd;
+				img{
+					display: block;
+					margin: auto;
+				}
+			}
+		}
+		&#news{
+			background-image: url('../img/bg-blog.jpg');
+			background-size: cover;
+			background-position: center center;
+			color: #fff;
+			button{
+				color: #fff;
+				border: 0;
+			}
+		}
+		&#prices{
+			.card{
+				border-radius: 0;
+				.header__card, .content{
+					padding: 30px 30px;
+					text-align: center;
+					h4,h5,h6{
+						margin: 0;
+					}
+				}
+				.header__card{
+					background: #e3f;
+					color: #fff;
+					cursor: pointer;
+					transition: .5s;
+					border: 1px solid #fff;
+					&:hover{
+						background: #fff;
+						color: #000;
+						border: 1px solid #e3f;
+					}
+				}
+				.content{
+					min-height: 300px;
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+				}
+			}
+		}
+		&#subscribe{
+			color: #fff;
+			text-align: center;
+			background-image: url('../img/subscribe.jpg');
+			background-size: cover;
+			background-position: center center;
+			form{
+				input
+			}
+		}
+	}
+}
